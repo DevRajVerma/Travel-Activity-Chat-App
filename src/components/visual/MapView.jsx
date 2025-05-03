@@ -1,9 +1,9 @@
 const MapView = () => {
     return (
-      <div className="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden mb-6">
+      <div className="bg-white  shadow-sm border border-gray-200 overflow-hidden mb-6 rounded-xl">
         <div className="relative">
           <img
-            src="/placeholder.svg?height=300&width=600"
+            src="/map.jpg?height=300&width=600"
             alt="Map of Japan showing Tokyo and Kyoto"
             className="w-full h-48 object-cover"
           />
