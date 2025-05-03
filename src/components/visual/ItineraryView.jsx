@@ -8,7 +8,7 @@ const ItineraryView = ({ itinerary }) => {
       <h3 className="text-md font-medium text-gray-800 mb-2">Your 4-Day Itinerary</h3>
       <div className="space-y-4">
         {itinerary.map((day, index) => (
-          <div key={index} className="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden">
+          <div key={index} className="bg-gray-200 rounded-xl shadow-md border border-gray-200 overflow-hidden">
             <div className="p-4">
               <div className="flex items-center">
                 <div
@@ -24,9 +24,9 @@ const ItineraryView = ({ itinerary }) => {
                 </div>
               </div>
 
-              <div className="mt-3 pl-13 ml-7 border-l-2 border-gray-100 space-y-3">
+              <div className="mt-3 pl-13 ml-7 border-l-2 border-gray-200 space-y-3 ">
                 {day.activities.map((activity, i) => (
-                  <div key={i} className="relative">
+                  <div key={i} className="relative ">
                     <div className="absolute -left-[15px] top-1.5 w-3 h-3 rounded-full bg-gray-200"></div>
                     <div className="text-sm">
                       <span className="font-medium">{activity.time}</span> - {activity.description}

@@ -26,7 +26,7 @@ const ActivityCard = ({ activity, expanded = false, compact = false, onClick }) 
   }
 
   return (
-    <div className="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden">
+    <div className="bg-white rounded-xl shadow-sm border border-gray-200 overflow-hidden">
       <div className="h-48 bg-cover bg-center" style={{ backgroundImage: `url(${activity.image})` }}>
         <div className="h-full w-full bg-black bg-opacity-20 flex items-end">
           <div className="p-4 text-white">
@@ -36,7 +36,7 @@ const ActivityCard = ({ activity, expanded = false, compact = false, onClick }) 
         </div>
       </div>
 
-      <div className="p-4">
+      <div className="p-4 rounded-xl">
         <div className="flex items-center text-sm text-gray-600 mb-3">
           <span className="mr-3 flex items-center">
             <svg
@@ -86,7 +86,7 @@ const ActivityCard = ({ activity, expanded = false, compact = false, onClick }) 
         <p className="text-gray-700 mb-4">{activity.description}</p>
 
         {expanded && (
-          <div className="bg-gray-50 p-3 rounded-md border border-gray-200">
+          <div className="bg-gray-100 p-3 rounded-xl border border-gray-200">
             <h4 className="font-medium text-gray-800 mb-1">Why we recommend this</h4>
             <p className="text-sm text-gray-700">{activity.recommendation}</p>
           </div>
